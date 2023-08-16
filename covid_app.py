@@ -9,7 +9,7 @@ import seaborn as sns
 import numpy as np
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-st.title("Simple Web application Page")
+st.title("A COVID-19 app")
 tab_1, tab_2,tab_3 = st.tabs(['DATAFRAME AND DOWNLOAD','VIEW PREDICTION','ABOUT APPLICATION'])
 model_dt = joblib.load("dt.joblib")
 model_lr = pickle.load(open("lr.pkl", 'rb'))
